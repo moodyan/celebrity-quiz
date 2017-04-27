@@ -5,9 +5,59 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title></title>
+    <title>Celebrity Dating Quiz</title>
   </head>
   <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Celebrity Dating Quiz</h1>
+        <p>Take this quiz to find your perfect celebrity match</p>
+      </div>
+
+      <form id="quiz">
+        <div class="form-group">
+          <label for="nameInput">Name</label>
+          <input class="form-control" id="nameInput" type="text"></input>
+        </div>
+
+        <div class="form-group">
+          <label for="gender">What gender are you interested in?</label>
+          <select multiple class="form-control" id="gender">
+            <option id="male">Male</option>
+            <option id="female">Female</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="quality">What quality is most important to you?</label>
+          <select multiple class="form-control" id="quality">
+            <option class="quality-1">They make me laugh.</option>
+            <option class="quality-2">They will buy me things.</option>
+            <option class="quality-2">They are compassionate and care about giving back.</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="attribute">What physical attribute matters most?</label>
+          <select multiple class="form-control" id="attribute">
+            <option class="attribute-1">Beautiful smile.</option>
+            <option class="attribute-1">A nice body.</option>
+            <option class="attribute-2">I don't care about looks! It's what is inside that matters most!</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="date">My perfect date would be:</label>
+          <select multiple class="form-control" id="date">
+            <option class="date-1">A walk on the beach with good conversation.</option>
+            <option class="date-1">Go to a comedy show.</option>
+            <option class="date-1">A nice dinner.</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn"></button>
+      </form>
+    </div>
 
   </body>
 </html>
